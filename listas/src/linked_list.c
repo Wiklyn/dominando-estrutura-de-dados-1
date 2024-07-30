@@ -174,13 +174,13 @@ int LinkedList_get_val(const LinkedList *list, int index)
 {
     if (LinkedList_is_empty(list))
     {
-        fprintf(stderr, "ERROR in 'LinkedList_fisrt_node'\n");
+        fprintf(stderr, "ERROR in 'LinkedList_get_val'\n");
         fprintf(stderr, "List is empty\n");
         exit(EXIT_FAILURE);
     }
     else if (index < 0 || index >= list->size)
     {
-        fprintf(stderr, "ERROR in 'LinkedList_fisrt_node'\n");
+        fprintf(stderr, "ERROR in 'LinkedList_get_val'\n");
         fprintf(stderr, "Invalid Index: %d\n", index);
         fprintf(stderr, "Try an index within [0, %lu]:\n", list->size);
         exit(EXIT_FAILURE);
