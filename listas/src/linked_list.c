@@ -182,7 +182,7 @@ int LinkedList_get_val(const LinkedList *list, int index)
     {
         fprintf(stderr, "ERROR in 'LinkedList_get_val'\n");
         fprintf(stderr, "Invalid Index: %d\n", index);
-        fprintf(stderr, "Try an index within [0, %lu]:\n", list->size);
+        fprintf(stderr, "Try an index within [0, %lu]:\n", list->size - 1);
         exit(EXIT_FAILURE);
     }
 
