@@ -1,4 +1,4 @@
-#include "static_queue.h"
+#include "static_circular_queue.h"
 
 #include <stdio.h>
 #include <stdlib.h>
